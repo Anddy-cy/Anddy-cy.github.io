@@ -1,0 +1,25 @@
+
+
+     1、文件编码 ansi
+
+      2、不需要package
+
+           编译：当前目录 cmd ：javac 文件名.java
+
+           运行：当前目录 cmd：java 类名
+
+     3、需要package
+
+            package andlyf.cc；
+
+          1》根据包名创建目录 andlyf.cc  就是 当前目录》andlyf》cc
+
+          2》把java文件放到当前目录
+
+          3》编译： 当前目录 cmd：javac -d . 文件名.java    //中间小数点代表当前目录
+
+          4》运行：当前目录 cmd：java andlyf.cc.类名     //用全限定类名
+
+          5》被编译的文件要转移，需要同package指定的目录一起转移
+
+               即复制 andlyf目录    cmd运行的时候cd到andlyf同级目录（根目录）
