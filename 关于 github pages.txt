@@ -1,0 +1,14 @@
+
+ 1、github 里面新建一个  “用户名.github.io”的仓库
+
+ 2、github 进入 https://github.com/settings/tokens  创建自己的token
+
+ 3、本地创建git仓库
+
+ 4、本地添加远程仓库并克隆
+
+ 5、在本地仓库中创建 index.html
+
+ 6、本地仓库提交、并推送到远程仓库
+
+ 7、然后实现 浏览器访问：https://用户名.github.io
