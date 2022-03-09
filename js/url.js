@@ -3,17 +3,17 @@ function ceshi(){
 }
 
 
-function jm1(){	
-	var aseKey = "12345678"     //秘钥必须为：8/16/32位
-        var message = "http://[2409:8a48:2442:6fe1:9cc5:ba1a:9dfa:da00]/";
-        //加密
-        encrypt = CryptoJS.AES.encrypt(message, CryptoJS.enc.Utf8.parse(aseKey), {
-                mode: CryptoJS.mode.ECB,
-                padding: CryptoJS.pad.Pkcs7
-        }).toString();
-        //console.log(encrypt);    //VKrZlqykem73x8/T2oCfCQ==
-	alert(encrypt);
-}
+// function jm1(){	
+// 	var aseKey = "12345678"     //秘钥必须为：8/16/32位
+//         var message = "http://[2409:8a48:2442:6fe1:9cc5:ba1a:9dfa:da00]/";
+//         //加密
+//         encrypt = CryptoJS.AES.encrypt(message, CryptoJS.enc.Utf8.parse(aseKey), {
+//                 mode: CryptoJS.mode.ECB,
+//                 padding: CryptoJS.pad.Pkcs7
+//         }).toString();
+//         //console.log(encrypt);    //VKrZlqykem73x8/T2oCfCQ==
+// 	alert(encrypt);
+// }
 
 function jm2(aseKey){
 	//解密
