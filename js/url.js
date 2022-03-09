@@ -11,7 +11,7 @@ function jm1(){
                 padding: CryptoJS.pad.Pkcs7
         }).toString();
         //console.log(encrypt);    //VKrZlqykem73x8/T2oCfCQ==
-	alert("encrypt");
+	alert(encrypt);
 }
 
 function jm2(){
@@ -21,7 +21,7 @@ function jm2(){
                 padding: CryptoJS.pad.Pkcs7
         }).toString(CryptoJS.enc.Utf8);
         //console.log(decrypt);    //80018000142
-	alert("decrypt");
+	alert(decrypt);
 }
 	
 	
