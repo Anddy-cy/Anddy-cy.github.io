@@ -22,4 +22,4 @@
 
           5》被编译的文件要转移，需要同package指定的目录一起转移
 
-               即复制 andlyf目录    cmd运行的时候cd到andlyf同级目录（根目录）
+               即复制 andlyf目录    cmd运行的时候cd到andlyf同级目录（根目录）22
