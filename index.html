@@ -4,19 +4,19 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>一些笔记</title>
         <script src="js/crypto-js.min.js"></script>
-        <script src="js/url.js"></script>
     </head>
     
     <body>
         <a href="javscript:void(0)" onclick="ceshi()">一个测试</a><br>
-        <a href="javscript:void(0)" onclick="jm1()">jiami</a><br>
-        <a href="javscript:void(0)" onclick="jm2()">jiemi</a><br>
-        <a href="javscript:void(0)" onclick="shuru()">shuru</a>
-        
     <script type="text/javascript">
         window.onload = function(){
-        ReqHtml();
-        //alert("nihao");//信息框
+        var encrypt="VKrZlqykem73x8/T2oCfCQ=="
+        var aseKey=prompt("暗号:","");
+        var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {
+                mode: CryptoJS.mode.ECB,
+                padding: CryptoJS.pad.Pkcs7
+        }).toString(CryptoJS.enc.Utf8);
+        alert(decrypt);//信息框
     }
     </script>
     </body>
