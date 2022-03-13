@@ -12,7 +12,8 @@
     <link href="css/demo.css" rel="stylesheet" type="text/css" />   
     <script src="js/crypto-js.min.js"></script>   
     <script type="text/javascript">   
-    function jiemi(){   
+    function jiemi(){ 
+        //ontouch
         var encrypt="6CT554Pro9VjXy219wUFpz8xp9NkYXJnl6ZivKyl2rmz5rg265bzJL4Mu/g/Elv+jXUKC5+TRzZKoHKdxsTYAA=="//lalala 
         var aseKey=document.getElementById("anhao").value   
         var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {     
@@ -41,7 +42,7 @@
                 <input name="login" id="anhao" placeholder='.....' maxlength="16" type='text' onkeydown="enter(event)"/>   
             </div>   
             <div class='login_fields__submit'>   
-                <input type='button' value='Go ~' ontouch="jiemi()"/>
+                <input type='button' value='Go ~' onclick="jiemi()"/>
             </div>   
         </div>   
     </div>   
