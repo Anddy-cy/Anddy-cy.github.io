@@ -1,56 +1,56 @@
-<!DOCTYPE html>                
-<head>                
-    <meta charset="UTF-8"/>                
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />                
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />             
-    <title>Andlyf Home</title>                
-    <link rel="shortcut icon" href="img/tou.png">                
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />                
-    <link href="css/demo.css" rel="stylesheet" type="text/css" />                
-    <script src="js/crypto-js.min.js"></script>                
-    <script type="text/javascript">                
-    function jiemi(){              
-        //ontouch             
+<!DOCTYPE html>                 
+<head>                 
+    <meta charset="UTF-8"/>                 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />                 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />              
+    <title>Andlyf Home</title>                 
+    <link rel="shortcut icon" href="img/tou.png">                 
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />                 
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />                 
+    <script src="js/crypto-js.min.js"></script>                 
+    <script type="text/javascript">                 
+    function jiemi(){               
+        //ontouch              
         var encrypt="6CT554Pro9VjXy219wUFpyGKpQ1jH+3jOiuxRBzwMZtbsqSwSWLWcj9uCzZu2KLS";//lalala 
-        var aseKey=document.getElementById("anhao").value;           
-        var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {                  
-                mode: CryptoJS.mode.ECB,                  
-                padding: CryptoJS.pad.Pkcs7                  
-        }).toString(CryptoJS.enc.Utf8);                  
-        //alert(decrypt);//信息框                
-        window.location.href=decrypt+":8067";                
-    }                
-    function enter(e){                
-        var an=window.event ||e;                
-        if(an.keyCode==13){jiemi();}                
-    }                
-    </script>                
-</head>                
-<body>                
-    <div class='login'>                
-        <div class='login_title'>                
-            <span>密码</span>                
-        </div>                
-        <div class='login_fields'>                
-            <div class='login_fields__user'>                
-                <div class='icon'>                
-                    <img alt="" src='img/user.png' />                
-                </div>                
-                <input name="login" id="anhao" placeholder='.....' maxlength="16" type='text' onkeydown="enter(event)"/>                
-            </div>                
-            <div class='login_fields__submit'>                
-                <input type='button' value='Go ~' ontouch="jiemi()" onclick="jiemi()"/>             
-            </div>                
-        </div>                
-        <div class='disclaimer' id="tem"></div>             
-    </div>            
-    <script type="text/javascript">          
-    window.onload = function(){         
-        f1=document.getElementById("tem");         
-        var p1=document.createElement("p");//创建一个p标签         
-        p1.innerHTML="周二 2022/03/15 17:23:30.98";//shijian 
-        f1.appendChild(p1);//放进div         
-    }         
-    </script>         
-</body>                
-</html>                
+        var aseKey=document.getElementById("anhao").value;            
+        var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {                   
+                mode: CryptoJS.mode.ECB,                   
+                padding: CryptoJS.pad.Pkcs7                   
+        }).toString(CryptoJS.enc.Utf8);                   
+        //alert(decrypt);//信息框                 
+        window.location.href=decrypt+":8067";                 
+    }                 
+    function enter(e){                 
+        var an=window.event ||e;                 
+        if(an.keyCode==13){jiemi();}                 
+    }                 
+    </script>                 
+</head>                 
+<body>                 
+    <div class='login'>                 
+        <div class='login_title'>                 
+            <span>密码</span>                 
+        </div>                 
+        <div class='login_fields'>                 
+            <div class='login_fields__user'>                 
+                <div class='icon'>                 
+                    <img alt="" src='img/user.png' />                 
+                </div>                 
+                <input name="login" id="anhao" placeholder='.....' maxlength="16" type='text' onkeydown="enter(event)"/>                 
+            </div>                 
+            <div class='login_fields__submit'>                 
+                <input type='button' value='Go ~' ontouch="jiemi()" onclick="jiemi()"/>              
+            </div>                 
+        </div>                 
+        <div class='disclaimer' id="tem"></div>              
+    </div>             
+    <script type="text/javascript">           
+    window.onload = function(){          
+        f1=document.getElementById("tem");          
+        var p1=document.createElement("p");//创建一个p标签          
+        p1.innerHTML="周二 2022/03/15 17:25:01.05";//shijian 
+        f1.appendChild(p1);//放进div          
+    }          
+    </script>          
+</body>                 
+</html>                 
