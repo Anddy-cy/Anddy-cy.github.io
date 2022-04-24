@@ -23,7 +23,10 @@
     function enter(e){                   
         var an=window.event ||e;                   
         if(an.keyCode==13){jiemi();}                   
-    }                   
+    } 
+    function bendi(){
+        window.location.href=decrypt+"http://192.168.1.99:7788";
+    }
     </script>                   
 </head>                   
 <body>                   
@@ -40,7 +43,7 @@
             </div>                   
             <div class='login_fields__submit'>                   
                 <input type='button' value='Go ~' ontouch="jiemi()" onclick="jiemi()"/>  
-                <input type='button' value='本地->' />
+                <input type='button' value='本地->' ontouch="bendi()" onclick="bendi()"/>
             </div>                   
         </div>                   
         <div class='disclaimer' id="tem"></div>                
