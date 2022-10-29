@@ -1,59 +1,59 @@
-<!DOCTYPE html>                                      
-<head>                                      
-    <meta charset="UTF-8"/>                                      
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />                                      
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />                                   
-    <title>Andlyf Home</title>                                      
-    <link rel="shortcut icon" href="img/tou.png">                                      
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />                                      
-    <link href="css/demo.css" rel="stylesheet" type="text/css" />                                      
-    <script src="js/crypto-js.min.js"></script>                                      
-    <script type="text/javascript">                                      
-    function jiemi(){                                    
-        //ontouch                                   
-        var encrypt="6CT554Pro9VjXy219wUFp+dfkouDClGhuTLsB/7B6O5bsqSwSWLWcj9uCzZu2KLS";//lalala 
-        var aseKey=document.getElementById("anhao").value;                                 
-        var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {                                        
-                mode: CryptoJS.mode.ECB,                                        
-                padding: CryptoJS.pad.Pkcs7                                        
-        }).toString(CryptoJS.enc.Utf8);                                        
-        window.location.href=decrypt+":7788";                                      
-    }                                      
-    function enter(e){                                      
-        var an=window.event ||e;                                      
-        if(an.keyCode==13){jiemi();}                                      
+<!DOCTYPE html>                                       
+<head>                                       
+    <meta charset="UTF-8"/>                                       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />                                       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />                                    
+    <title>Andlyf Home</title>                                       
+    <link rel="shortcut icon" href="img/tou.png">                                       
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />                                       
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />                                       
+    <script src="js/crypto-js.min.js"></script>                                       
+    <script type="text/javascript">                                       
+    function jiemi(){                                     
+        //ontouch                                    
+        var encrypt="6CT554Pro9VjXy219wUFp3tL/L3hQPBm+xZx9NcFLMNbsqSwSWLWcj9uCzZu2KLS";//lalala 
+        var aseKey=document.getElementById("anhao").value;                                  
+        var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {                                         
+                mode: CryptoJS.mode.ECB,                                         
+                padding: CryptoJS.pad.Pkcs7                                         
+        }).toString(CryptoJS.enc.Utf8);                                         
+        window.location.href=decrypt+":7788";                                       
+    }                                       
+    function enter(e){                                       
+        var an=window.event ||e;                                       
+        if(an.keyCode==13){jiemi();}                                       
+    }                     
+    function bendi(){                    
+        window.location.href="http://192.168.1.99:7788";                    
     }                    
-    function bendi(){                   
-        window.location.href="http://192.168.1.99:7788";                   
-    }                   
-    </script>                                      
-</head>                                      
-<body>                                      
-    <div class='login'>                                      
-        <div class='login_title'>                                      
-            <span>密码</span>                                      
-        </div>                                      
-        <div class='login_fields'>                                      
-            <div class='login_fields__user'>                                      
-                <div class='icon'>                                      
-                    <img alt="" src='img/user.png' />                                      
-                </div>                                      
-                <input name="login" id="anhao" placeholder='.....' maxlength="16" type='text' onkeydown="enter(event)"/>                                      
-            </div>                                      
-            <div class='login_fields__submit'>                                      
-                <input type='button' value='Go ~' ontouch="jiemi()" onclick="jiemi()"/>                     
-                <input type='button' value='本地->' ontouch="bendi()" onclick="bendi()"/>                   
-            </div>                                      
-        </div>                                      
-        <div class='disclaimer' id="tem"></div>                                   
-    </div>                                  
-    <script type="text/javascript">                                
-    window.onload = function(){                               
-        f1=document.getElementById("tem");                               
-        var p1=document.createElement("p");                            
-        p1.innerHTML="周四 2022/09/15  5:56:04.72";//shijian 
-        f1.appendChild(p1);                              
-    }                               
-    </script>                               
-</body>                                      
-</html>                                      
+    </script>                                       
+</head>                                       
+<body>                                       
+    <div class='login'>                                       
+        <div class='login_title'>                                       
+            <span>密码</span>                                       
+        </div>                                       
+        <div class='login_fields'>                                       
+            <div class='login_fields__user'>                                       
+                <div class='icon'>                                       
+                    <img alt="" src='img/user.png' />                                       
+                </div>                                       
+                <input name="login" id="anhao" placeholder='.....' maxlength="16" type='text' onkeydown="enter(event)"/>                                       
+            </div>                                       
+            <div class='login_fields__submit'>                                       
+                <input type='button' value='Go ~' ontouch="jiemi()" onclick="jiemi()"/>                      
+                <input type='button' value='本地->' ontouch="bendi()" onclick="bendi()"/>                    
+            </div>                                       
+        </div>                                       
+        <div class='disclaimer' id="tem"></div>                                    
+    </div>                                   
+    <script type="text/javascript">                                 
+    window.onload = function(){                                
+        f1=document.getElementById("tem");                                
+        var p1=document.createElement("p");                             
+        p1.innerHTML="周六 2022/10/29  9:11:36.35";//shijian 
+        f1.appendChild(p1);                               
+    }                                
+    </script>                                
+</body>                                       
+</html>                                       
